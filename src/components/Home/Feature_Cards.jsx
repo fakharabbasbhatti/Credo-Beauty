@@ -204,18 +204,6 @@ const Feature_Cards = () => {
           </div>
         ))}
       </div>
-
-      {/* Bottom CTA */}
-      <div 
-        className="text-center mt-12"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <button className="px-8 py-3 border-2 border-[#D4A373] text-[#D4A373] hover:bg-[#D4A373] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center gap-2">
-          <FaRegHeart />
-          View All Products
-        </button>
-      </div>
     </section>
   );
 };

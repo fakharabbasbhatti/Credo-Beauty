@@ -183,7 +183,7 @@ const Best_Sellers = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-[#141414] to-[#1b1b1b] py-12 md:py-20 px-4 sm:px-6 text-[#FFF4E6] overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#1B1B1B] to-[#141414] py-12 md:py-20 px-4 sm:px-6 text-[#FFF4E6] overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-5 md:left-20 w-10 h-10 md:w-20 md:h-20 border border-[#D4A373] rounded-full"></div>

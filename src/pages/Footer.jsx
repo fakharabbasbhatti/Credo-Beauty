@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,8 +8,18 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
   const footerLinks = [
     {
       title: "Quick Help",
@@ -68,7 +78,11 @@ const Footer = () => {
           {/* LEFT SIDE: BRAND & NEWSLETTER */}
           <div className="w-full lg:w-2/5 space-y-8">
             {/* Logo */}
-            <div className="group cursor-pointer">
+            <div 
+              className="group cursor-pointer"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               <div className="tracking-[0.3em] text-4xl font-bold uppercase text-[#D4A373]">
                 credo
               </div>
@@ -81,7 +95,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <p className="text-lg text-[#F1E3D3]/90 leading-relaxed max-w-md">
+            <p 
+              className="text-lg text-[#F1E3D3]/90 leading-relaxed max-w-md"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               Join our community for{" "}
               <span className="font-semibold text-[#FFF4E6]">
                 exclusive offers
@@ -92,51 +110,70 @@ const Footer = () => {
               </span>
             </p>
 
-           {/* Email Signup */}
-<div className="space-y-4">
-  <div className="group relative">
-    <form className="flex flex-col sm:flex-row items-stretch sm:items-center bg-[#1B1B1B] border border-[#D4A373]/40 rounded-2xl max-w-md w-full overflow-hidden focus-within:border-[#D4A373] focus-within:shadow-md focus-within:shadow-[#D4A373]/30 transition-all duration-300">
-      <div className="flex items-center flex-1 px-4 py-3 sm:py-0">
-        <HiOutlineMail className="text-[#F1E3D3]/60 text-xl mr-3" />
-        <input
-          type="email"
-          placeholder="Your email address"
-          className="flex-1 bg-transparent text-[#FFF4E6] placeholder-[#F1E3D3]/60 outline-none text-base"
-        />
-      </div>
-      <button
-        type="submit"
-        className="bg-[#D4A373] text-[#1B1B1B] font-semibold px-6 py-3 sm:py-4 rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl hover:bg-[#C69062] transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
-      >
-        Subscribe
-        <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
-      </button>
-    </form>
-  </div>
+            {/* Email Signup */}
+            <div className="space-y-4">
+              <div 
+                className="group relative"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <form className="flex flex-col sm:flex-row items-stretch sm:items-center bg-[#1B1B1B] border border-[#D4A373]/40 rounded-2xl max-w-md w-full overflow-hidden focus-within:border-[#D4A373] focus-within:shadow-md focus-within:shadow-[#D4A373]/30 transition-all duration-300">
+                  <div className="flex items-center flex-1 px-4 py-3 sm:py-0">
+                    <HiOutlineMail 
+                      className="text-[#F1E3D3]/60 text-xl mr-3" 
+                      data-aos="fade-right"
+                      data-aos-delay="350"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Your email address"
+                      className="flex-1 bg-transparent text-[#FFF4E6] placeholder-[#F1E3D3]/60 outline-none text-base"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-[#D4A373] text-[#1B1B1B] font-semibold px-6 py-3 sm:py-4 rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl hover:bg-[#C69062] transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
+                  >
+                    Subscribe
+                    <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </form>
+              </div>
 
-  {/* Phone Signup */}
-  <div className="group relative">
-    <form className="flex flex-col sm:flex-row items-stretch sm:items-center bg-[#1B1B1B] border border-[#D4A373]/40 rounded-2xl max-w-md w-full overflow-hidden focus-within:border-[#D4A373] focus-within:shadow-md focus-within:shadow-[#D4A373]/30 transition-all duration-300">
-      <div className="flex items-center flex-1 px-4 py-3 sm:py-0">
-        <HiPhone className="text-[#F1E3D3]/60 text-xl mr-3" />
-        <input
-          type="tel"
-          placeholder="Mobile number (U.S. only)"
-          className="flex-1 bg-transparent text-[#FFF4E6] placeholder-[#F1E3D3]/60 outline-none text-base"
-        />
-      </div>
-      <button
-        type="submit"
-        className="bg-[#D4A373] text-[#1B1B1B] font-semibold px-6 py-3 sm:py-4 rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl hover:bg-[#C69062] transform hover:scale-105 transition-all duration-200"
-      >
-        Sign Up
-      </button>
-    </form>
-  </div>
-</div>
+              {/* Phone Signup */}
+              <div 
+                className="group relative"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <form className="flex flex-col sm:flex-row items-stretch sm:items-center bg-[#1B1B1B] border border-[#D4A373]/40 rounded-2xl max-w-md w-full overflow-hidden focus-within:border-[#D4A373] focus-within:shadow-md focus-within:shadow-[#D4A373]/30 transition-all duration-300">
+                  <div className="flex items-center flex-1 px-4 py-3 sm:py-0">
+                    <HiPhone 
+                      className="text-[#F1E3D3]/60 text-xl mr-3" 
+                      data-aos="fade-right"
+                      data-aos-delay="450"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Mobile number (U.S. only)"
+                      className="flex-1 bg-transparent text-[#FFF4E6] placeholder-[#F1E3D3]/60 outline-none text-base"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-[#D4A373] text-[#1B1B1B] font-semibold px-6 py-3 sm:py-4 rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl hover:bg-[#C69062] transform hover:scale-105 transition-all duration-200"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
 
-
-            <p className="text-xs text-[#F1E3D3]/60 leading-relaxed max-w-md pt-4">
+            <p 
+              className="text-xs text-[#F1E3D3]/60 leading-relaxed max-w-md pt-4"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               By subscribing, you agree to our marketing communications and
               privacy terms. Msg & data rates may apply.{" "}
               <a
@@ -151,18 +188,29 @@ const Footer = () => {
 
           {/* RIGHT SIDE: LINKS GRID */}
           <div className="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
-            {footerLinks.map((section) => (
-              <div key={section.title} className="group">
+            {footerLinks.map((section, index) => (
+              <div 
+                key={section.title} 
+                className="group"
+                data-aos="fade-up"
+                data-aos-delay={300 + (index * 100)}
+              >
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FFF4E6] mb-4 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-[#D4A373] rounded-full group-hover:scale-125 transition-transform"></div>
+                  <div 
+                    className="w-2 h-2 bg-[#D4A373] rounded-full group-hover:scale-125 transition-transform"
+                    data-aos="zoom-in"
+                    data-aos-delay={400 + (index * 100)}
+                  ></div>
                   {section.title}
                 </h3>
                 <ul className="space-y-3">
-                  {section.links.map((link) => (
+                  {section.links.map((link, linkIndex) => (
                     <li key={link}>
                       <a
                         href="#"
                         className="text-sm text-[#F1E3D3]/80 hover:text-[#D4A373] transition-all duration-200 hover:translate-x-1 flex items-center gap-1"
+                        data-aos="fade-right"
+                        data-aos-delay={500 + (index * 100) + (linkIndex * 50)}
                       >
                         {link}
                       </a>
@@ -176,45 +224,46 @@ const Footer = () => {
 
         {/* BOTTOM SECTION */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-          {/* COPYRIGHT */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-center">
-            <span className="text-xs text-[#F1E3D3]/70">
-              © 2025 Credo Beauty. All Rights Reserved.
-            </span>
-            <div className="flex flex-wrap justify-center gap-4 text-xs">
-              {[
-                "Accessibility",
-                "Privacy Policy",
-                "CCPA Notice",
-                "Terms of Use",
-                "Sitemap",
-                "Blog",
-              ].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="text-[#F1E3D3]/70 hover:text-[#D4A373] hover:underline transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
+  {/* COPYRIGHT */}
+  <div className="flex flex-col sm:flex-row items-center gap-4 text-center">
+    <span className="text-xs text-[#F1E3D3]/70">
+      © 2025 Credo Beauty. All Rights Reserved.
+    </span>
+    <div className="flex flex-wrap justify-center gap-4 text-xs">
+      {[
+        "Accessibility",
+        "Privacy Policy",
+        "CCPA Notice",
+        "Terms of Use",
+        "Sitemap",
+        "Blog",
+      ].map((item) => (
+        <a
+          key={item}
+          href="#"
+          className="text-[#F1E3D3]/70 hover:text-[#D4A373] hover:underline transition-colors duration-200"
+        >
+          {item}
+        </a>
+      ))}
+    </div>
+  </div>
 
-          {/* SOCIAL ICONS */}
-          <div className="flex space-x-3">
-            {socialIcons.map((item, i) => (
-              <a
-                key={i}
-                href={item.url}
-                className="p-3 bg-[#D4A373]/10 border border-[#D4A373]/30 rounded-xl hover:border-[#D4A373]/70 hover:bg-[#D4A373]/20 transform hover:scale-110 transition-all duration-200"
-                aria-label={`Follow us on ${item.icon.name}`}
-              >
-                <item.icon className="text-lg text-[#FFF4E6] hover:text-[#C69062] transition-colors" />
-              </a>
-            ))}
-          </div>
-        </div>
+  {/* SOCIAL ICONS */}
+  <div className="flex space-x-3">
+    {socialIcons.map((item, i) => (
+      <a
+        key={i}
+        href={item.url}
+        className="p-3 bg-[#D4A373]/10 border border-[#D4A373]/30 rounded-xl hover:border-[#D4A373]/70 hover:bg-[#D4A373]/20 transform hover:scale-110 transition-all duration-200"
+        aria-label={`Follow us on ${item.icon.name}`}
+      >
+        <item.icon className="text-lg text-[#FFF4E6] hover:text-[#C69062] transition-colors" />
+      </a>
+    ))}
+  </div>
+</div>
+
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaChevronDown, FaPhone, FaMapMarkerAlt, FaClock, FaShoppingBag, FaGift, FaStar } from "react-icons/fa";
+import { FaChevronDown, FaPhoneAlt, FaMapMarkerAlt, FaClock, FaShoppingBag, FaGift, FaStar } from "react-icons/fa";
 
 const Hero = () => {
   useEffect(() => {
@@ -75,7 +75,7 @@ const Hero = () => {
 
             {/* Features Grid */}
             <div
-              className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto"
+              className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto"
               data-aos="fade-up"
               data-aos-delay="700"
             >
@@ -94,36 +94,37 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div
-              className="flex flex-col sm:flex-row justify-center gap-4 mb-8"
-              data-aos="zoom-in"
-              data-aos-delay="900"
-            >
-              <a
-                href="/shop"
-                className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 group"
-              >
-                <FaShoppingBag className="group-hover:scale-110 transition-transform" />
-                Shop Now
-              </a>
+           <div
+  className="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4 mb-8"
+  data-aos="zoom-in"
+  data-aos-delay="900"
+>
+  <a
+    href="/shop"
+    className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
+  >
+    <FaShoppingBag className="group-hover:scale-110 transition-transform" />
+    Shop Now
+  </a>
 
-              <a
-                href="/gifts"
-                className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center gap-2 group"
-              >
-                <FaGift className="group-hover:scale-110 transition-transform" />
-                View Gift Guide
-              </a>
-            </div>
+  <a
+    href="/gifts"
+    className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+  >
+    <FaGift className="group-hover:scale-110 transition-transform" />
+    View Gift
+  </a>
+</div>
+
         
      {/* Contact Quick Info */}
             <div
-              className="flex flex-col sm:flex-row justify-center items-center gap-6 text-[#F1E3D3]/90 text-sm"
+              className="hidden md:flex flex-col sm:flex-row justify-center items-center gap-6 text-[#F1E3D3]/90 text-sm"
               data-aos="fade-in"
               data-aos-delay="1300"
             >
               <div className="flex items-center gap-2 hover:text-[#D4A373] transition-colors cursor-pointer">
-                <FaPhone className="text-[#D4A373]" />
+                <FaPhoneAlt className="text-[#D4A373]" />
                 <span>+92 13456789</span>
               </div>
 
