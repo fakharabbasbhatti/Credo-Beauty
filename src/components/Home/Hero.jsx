@@ -108,11 +108,11 @@ const Hero = () => {
   </a>
 
   <a
-    href="/gifts"
+    href="/contact"
     className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
   >
-    <FaGift className="group-hover:scale-110 transition-transform" />
-    View Gift
+    <FaPhoneAlt className="group-hover:scale-110 transition-transform" />
+    Contact Us
   </a>
 </div>
 
@@ -171,3 +171,12 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+// Primary brand tone: #D4A373 (warm, elegant gold-beige)
+
+// Background overlay: #1B1B1B (soft black, keeps image visible but dramatic)
+
+// Text & border accents: creamy whites (#FFF4E6, #F1E3D3) for luxury contrast
+
+// Hover effect: subtle warm tone shift to #C69062
