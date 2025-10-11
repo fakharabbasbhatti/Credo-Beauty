@@ -42,7 +42,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="py-20 bg-[#1B1B1B] relative overflow-hidden">
+    <div className="py-14 bg-[#1f1c1c] relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-10 left-10 w-20 h-20 bg-[#D4A373]/10 rounded-full blur-xl" data-aos="fade-right"></div>
       <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#D4A373]/5 rounded-full blur-2xl" data-aos="fade-left"></div>

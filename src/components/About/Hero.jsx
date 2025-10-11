@@ -35,10 +35,10 @@ export default function Hero() {
       />
 
       {/* Main Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center max-w-4xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center max-w-4xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-8 pt-8 md:pt-0">
         {/* Badge */}
         <div 
-          className="mb-4 sm:mb-5 md:mb-6 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[#D4A373] bg-[#1B1B1B]/60 backdrop-blur-sm"
+          className="mb-4  sm:mb-5 md:mb-6 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[#D4A373] bg-[#1B1B1B]/60 backdrop-blur-sm"
           data-aos="fade-down"
           data-aos-delay="200"
         >
@@ -47,7 +47,7 @@ export default function Hero() {
 
         {/* Main Heading */}
         <h1 
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 px-2"
+          className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 px-2"
           style={{
             color: '#FFF4E6',
             textShadow: '0 4px 12px rgba(0,0,0,0.3)'
@@ -89,7 +89,7 @@ export default function Hero() {
 
 <a
     href="/contact"
-    className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+    className="px-12 md:px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
   >
     <FaPhoneAlt className="group-hover:scale-110 transition-transform" />
     Contact Us
@@ -99,7 +99,7 @@ export default function Hero() {
 
         {/* Features */}
         <div 
-          className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 mt-3  px-2"
+          className="hidden md:flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 mt-3  px-2"
           data-aos="fade-up"
           data-aos-delay="600"
         >
