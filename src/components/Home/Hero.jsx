@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaChevronDown, FaPhoneAlt, FaMapMarkerAlt, FaClock, FaShoppingBag, FaGift, FaStar } from "react-icons/fa";
@@ -99,13 +100,13 @@ const Hero = () => {
   data-aos="zoom-in"
   data-aos-delay="900"
 >
-  <a
-    href="/shop"
+  <Link
+    to="/about"
     className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
   >
     <FaShoppingBag className="group-hover:scale-110 transition-transform" />
     Shop Now
-  </a>
+  </Link>
 
   <a
     href="/contact"
