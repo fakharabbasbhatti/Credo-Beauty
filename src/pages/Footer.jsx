@@ -3,8 +3,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
-  FaYoutube,
-  FaTiktok,
+  FaLinkedinIn,
   FaArrowRight,
 } from "react-icons/fa";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
@@ -63,8 +62,7 @@ const Footer = () => {
     { icon: FaFacebookF, url: "#" },
     { icon: FaInstagram, url: "#" },
     { icon: FaTwitter, url: "#" },
-    { icon: FaYoutube, url: "#" },
-    { icon: FaTiktok, url: "#" },
+    { icon: FaLinkedinIn, url: "#" },
   ];
 
   return (
