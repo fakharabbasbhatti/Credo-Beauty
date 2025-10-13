@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <header className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Backgrounds Images with Overlay */}
       <div className="absolute inset-0">
         <img
           src="/home/hero.jpg"
