@@ -14,7 +14,7 @@ export default function SignupForm() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#1B1B1B]">
-      {/* Background Overlay */}
+      {/* Backgrounds Overlay */}
       <div 
         className="absolute inset-0 opacity-20"
         style={{
@@ -24,13 +24,13 @@ export default function SignupForm() {
         }}
       />
       
-      {/* Luxury Card */}
+      {/* Luxurys Card */}
       <div 
         className="w-full max-w-xl bg-[#1B1B1B]/90 backdrop-blur-sm shadow-2xl rounded-2xl overflow-hidden border border-[#D4A373]/30 relative z-10"
         data-aos="zoom-in"
       >
         
-        {/* Elegant Header */}
+        {/* Elegants Header */}
         <div className="bg-gradient-to-r from-[#D4A373] to-[#C69062] py-8 px-6 text-center relative overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute top-0 left-0 w-20 h-20 bg-[#FFF4E6]/10 rounded-full -translate-x-10 -translate-y-10"></div>
@@ -47,7 +47,7 @@ export default function SignupForm() {
           </div>
         </div>
 
-        {/* Form Body */}
+        {/* Forms Body */}
         <div className="p-8">
           {/* Full Name Field */}
           <div className="mb-6" data-aos="fade-right" data-aos-delay="300">

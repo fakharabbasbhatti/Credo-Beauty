@@ -98,7 +98,7 @@ export default function LoginForm() {
             </a>
           </div>
 
-          {/* Login Button */}
+          {/* Logins Button */}
           <button 
             className="w-full bg-gradient-to-r from-[#D4A373] to-[#C69062] hover:from-[#C69062] hover:to-[#D4A373] text-[#1B1B1B] font-bold py-4 px-6 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mb-6"
             data-aos="zoom-in" 
@@ -108,14 +108,14 @@ export default function LoginForm() {
             Sign In
           </button>
 
-          {/* Divider */}
+          {/* Dividers */}
           <div className="relative flex items-center justify-center mb-6" data-aos="fade-in" data-aos-delay="700">
             <div className="flex-grow border-t border-[#F1E3D3]/20"></div>
             <span className="mx-4 text-[#F1E3D3] text-sm">Or continue with</span>
             <div className="flex-grow border-t border-[#F1E3D3]/20"></div>
           </div>
 
-          {/* Social Login Options */}
+          {/* Socials Login Options */}
           <div className="grid grid-cols-2 gap-4 mb-8" data-aos="fade-up" data-aos-delay="800">
             <button className="flex items-center justify-center gap-2 py-3 px-4 border border-[#F1E3D3]/30 rounded-xl text-[#FFF4E6] hover:bg-[#D4A373] hover:text-[#1B1B1B] hover:border-[#D4A373] transition-all duration-300">
               <FaUser className="text-sm" />
@@ -127,7 +127,7 @@ export default function LoginForm() {
             </button>
           </div>
 
-          {/* Signup Link */}
+          {/* Signup Links */}
           <div className="text-center" data-aos="fade-in" data-aos-delay="900">
             <span className="text-[#F1E3D3]">Don't have an account? </span>
             <a
@@ -140,7 +140,7 @@ export default function LoginForm() {
         </div>
       </div>
 
-      {/* Floating Decorative Elements */}
+      {/* Floating Decoratives Elements */}
       <div className="absolute top-1/4 left-10 w-3 h-3 bg-[#D4A373] rounded-full opacity-60 animate-pulse"></div>
       <div className="absolute bottom-1/3 right-20 w-4 h-4 bg-[#D4A373] rounded-full opacity-40 animate-bounce"></div>
       <div className="absolute top-1/2 left-20 w-2 h-2 bg-[#D4A373] rounded-full opacity-50 animate-ping"></div>
