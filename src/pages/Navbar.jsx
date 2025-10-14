@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FiSearch,
   FiUser,
@@ -131,14 +132,34 @@ const Navbar = () => {
 
             {/* Mobile Icons */}
             <div className="flex items-center justify-around py-3 border-t border-[#D4A373]/30 text-[#F1E3D3]">
-              <FiSearch
-                className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-                onClick={() => setMobileSearch(true)}
-              />
-              <FiMessageCircle className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-              <FiUser className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-              <FiShoppingBag className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-            </div>
+  <Link
+    to="/search"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiSearch />
+  </Link>
+
+  <Link
+    to="/livechat"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiMessageCircle />
+  </Link>
+
+  <Link
+    to="/profile"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiUser />
+  </Link>
+
+  <Link
+    to="/cart"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiShoppingBag />
+  </Link>
+</div>
           </>
         )}
       </div>
