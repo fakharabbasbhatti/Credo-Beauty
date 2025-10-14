@@ -100,7 +100,7 @@ export default function LoginForm() {
 
           {/* Logins Button */}
           <button 
-            className="w-full bg-gradient-to-r from-[#D4A373] to-[#C69062] hover:from-[#C69062] hover:to-[#D4A373] text-[#1B1B1B] font-bold py-4 px-6 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mb-6"
+            className="w-full bg-gradient-to-r from-[#D4A373] to-[#C69062] hover:from-[#C69062] hover:to-[#D4A373] text-[#1B1B1B] cursor-pointer font-bold py-4 px-6 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mb-6"
             data-aos="zoom-in" 
             data-aos-delay="600"
           >

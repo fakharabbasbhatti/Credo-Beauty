@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaUser, FaLock, FaEnvelope, FaEye, FaEyeSlash, FaCrown, FaCheck } from "react-icons/fa";
+import { FiLogIn } from 'react-icons/fi';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -147,13 +148,13 @@ export default function SignupForm() {
 
           {/* Signup Button */}
           <button 
-            className="w-full bg-gradient-to-r from-[#D4A373] to-[#C69062] hover:from-[#C69062] hover:to-[#D4A373] text-[#1B1B1B] font-bold py-4 px-6 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mb-6 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="w-full bg-gradient-to-r from-[#D4A373] to-[#C69062] hover:from-[#C69062] hover:to-[#D4A373] text-[#1B1B1B] cursor-pointer font-bold py-4 px-6 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mb-6 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             data-aos="zoom-in" 
             data-aos-delay="800"
-            disabled={!agreeTerms}
+            
           >
-            <FaCheck className="text-lg" />
-            Create Account
+            <FiLogIn className="text-lg" />
+            Signup
           </button>
 
           {/* Divider */}
