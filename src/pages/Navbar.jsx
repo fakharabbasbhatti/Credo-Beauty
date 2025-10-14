@@ -64,22 +64,44 @@ const Navbar = () => {
 
         {/* Desktop Icons */}
         <div className="hidden lg:flex items-center space-x-5 text-[#F1E3D3]">
-          {showSearch ? (
-            <FiX
-              className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-              onClick={() => setShowSearch(false)}
-            />
-          ) : (
-            <FiSearch
-              className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-              onClick={() => setShowSearch(true)}
-            />
-          )}
-          <FiMessageCircle className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-          <div className="border-l h-5 border-[#D4A373]/40" />
-          <FiUser className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-          <FiShoppingBag className="text-xl cursor-pointer hover:text-[#C69062] transition-colors" />
-        </div>
+  {showSearch ? (
+    <FiX
+      className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+      onClick={() => setShowSearch(false)}
+    />
+  ) : (
+    <FiSearch
+      className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+      onClick={() => setShowSearch(true)}
+    />
+  )}
+
+  {/* Chat */}
+  <Link
+    to="/livechat"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiMessageCircle />
+  </Link>
+
+  <div className="border-l h-5 border-[#D4A373]/40" />
+
+  {/* Profile */}
+  <Link
+    to="/profile"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiUser />
+  </Link>
+
+  {/* Cart */}
+  <Link
+    to="/addtocart"
+    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+  >
+    <FiShoppingBag />
+  </Link>
+</div>
 
         {/* Mobile Hamburger */}
         <button
@@ -154,7 +176,7 @@ const Navbar = () => {
   </Link>
 
   <Link
-    to="/cart"
+    to="/addtocart"
     className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
   >
     <FiShoppingBag />

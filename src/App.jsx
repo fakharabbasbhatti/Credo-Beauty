@@ -7,6 +7,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import LiveChat from './pages/LiveChat'
+import ProfilePage from './pages/ProfilePage'
+import AddToCart from './pages/AddToCart'
 import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Footer from './pages/Footer'
@@ -21,6 +23,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/livechat" element={<LiveChat />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/addtocart" element={<AddToCart />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignupForm />} />
       </Routes>
