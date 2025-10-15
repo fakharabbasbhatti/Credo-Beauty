@@ -9,7 +9,6 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// ✅ 18 products with categories and badges
 const products = [
   // Makeup
   { id: 1, name: "Luxury Lipstick", category: "Makeup", price: 25, image: "/home/g1.jpg", bestseller: true },
@@ -48,7 +47,6 @@ const products = [
   { id: 18, name: "Sustainable Cotton Tote", category: "Mission", price: 22, image: "/home/g5.jpg" },
 ];
 
-// ✅ All categories (including Bestsellers + New)
 const categories = [
   "All",
   "Bestsellers",
@@ -73,7 +71,6 @@ const ServicesProducts = () => {
     AOS.init({ duration: 800, easing: "ease-in-out" });
   }, []);
 
-  // ✅ Filtering Logic
   const filteredProducts = products.filter((product) => {
     let matchesCategory = false;
 
@@ -87,7 +84,7 @@ const ServicesProducts = () => {
   });
 
   return (
-    <div className="min-h-screen bg-[#1B1B1B] text-[#FFF4E6] flex flex-col md:flex-row">
+    <div className="min-h-screen bg-[#1B1B1B] text-[#FFF4E6] flex flex-col md:flex-row overflow-hidden">
       {/* Sidebar */}
       <aside
         data-aos="fade-right"
@@ -115,9 +112,12 @@ const ServicesProducts = () => {
       </aside>
 
       {/* Main Content */}
-      <main data-aos="fade-left" className="flex-1 p-6 md:p-10 flex flex-col gap-6">
+      <main
+        data-aos="fade-left"
+        className="flex-1 p-6 md:p-10 flex flex-col gap-6 overflow-x-hidden overflow-y-auto"
+      >
         {/* Search + Filter */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sticky top-0 bg-[#1B1B1B] z-20 pb-2">
           <div className="flex items-center bg-[#1B1B1B]/70 border border-[#D4A373]/30 rounded-2xl px-4 py-2 w-full sm:w-1/2">
             <FiSearch className="text-[#D4A373] mr-2" />
             <input
@@ -153,7 +153,7 @@ const ServicesProducts = () => {
         )}
 
         {/* Products Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 overflow-hidden">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product, index) => (
               <div
@@ -163,13 +163,11 @@ const ServicesProducts = () => {
                 className="relative bg-[#2A2A2A]/70 border border-[#D4A373]/30 backdrop-blur-lg rounded-3xl overflow-hidden shadow-lg hover:shadow-[0_0_25px_rgba(212,163,115,0.4)] transition-all duration-500 group"
               >
                 {/* ✅ Category + Extra Badges */}
-                <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-                  {/* Category Badge */}
+                <div className="absolute top-3 left-3 flex flex-wrap gap-2 z-10">
                   <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-[#D4A373]/20 border border-[#D4A373]/50 text-[#FFF4E6] uppercase tracking-wide">
                     {product.category}
                   </span>
 
-                  {/* Extra Badges */}
                   {product.bestseller && (
                     <span className="text-[10px] font-bold px-3 py-1 rounded-full uppercase bg-[#C69062] text-[#1B1B1B]">
                       Bestseller
