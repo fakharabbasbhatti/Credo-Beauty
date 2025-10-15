@@ -65,14 +65,14 @@ const AddToCart = () => {
     <div className="min-h-screen bg-[#1B1B1B] text-[#FFF4E6] flex flex-col items-center px-6 py-10">
       {/* Header */}
       <div data-aos="fade-down" className="flex items-center gap-3 mt-20 mb-10">
-        <FiShoppingCart className="text-[#D4A373] text-3xl" />
+        <FiShoppingCart className="text-[#D4A373] text-5xl md:text-3xl" />
         <h1 className="text-2xl md:text-4xl font-bold text-[#D4A373] md:tracking-wide">
           Beauty & Fashion Boutique
         </h1>
       </div>
 
       {/* Product Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full max-w-6xl">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full max-w-7xl">
         {products.map((product, index) => (
           <div
             key={product.id}
@@ -106,7 +106,7 @@ const AddToCart = () => {
       {/* Cart Section */}
       <div
         data-aos="fade-up"
-        className="w-full max-w-3xl mt-16 bg-[#2A2A2A]/80 border border-[#D4A373]/30 rounded-3xl p-8 shadow-[0_0_20px_rgba(212,163,115,0.15)]"
+        className="w-full max-w-4xl mt-16 bg-[#2A2A2A]/80 border border-[#D4A373]/30 rounded-3xl p-8 shadow-[0_0_20px_rgba(212,163,115,0.15)]"
       >
         <div className="flex items-center justify-between mb-5">
           <h3 className="text-2xl font-semibold text-[#D4A373] flex items-center gap-2">
@@ -131,7 +131,7 @@ const AddToCart = () => {
             {cart.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center justify-between bg-[#1B1B1B]/60 border border-[#D4A373]/20 rounded-2xl p-4 hover:border-[#D4A373]/50 transition-all duration-300"
+                className="flex items-center justify-between bg-[#1B1B1B]/60 border border-[#D4A373]/20 rounded-2xl p-2 md:p-4 hover:border-[#D4A373]/50 transition-all duration-300"
               >
                 <div className="flex items-center gap-4">
                   <img
