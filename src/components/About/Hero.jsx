@@ -55,7 +55,7 @@ export default function Hero() {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Clean, Conscious
+          Modern Minimal 
           <br />
           <span 
             className="bg-gradient-to-r from-[#D4A373] to-[#C69062] bg-clip-text text-transparent"
@@ -63,7 +63,7 @@ export default function Hero() {
               backgroundImage: 'linear-gradient(135deg, #D4A373 0%, #C69062 100%)'
             }}
           >
-            Skin Care
+            Beauty & Fashion
           </span>
         </h1>
 
@@ -80,7 +80,7 @@ export default function Hero() {
         {/* CTA Button */}
         <div data-aos="fade-up" data-aos-delay="500" className="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4 mb-8">
 <a
-    href="/shop"
+    href="/services"
     className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
   >
     <FiShoppingCart className="group-hover:scale-110 transition-transform" />
@@ -89,7 +89,7 @@ export default function Hero() {
 
 <a
     href="/contact"
-    className="px-12 md:px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+    className="px-12 md:px-8 py-4 border-1 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
   >
     <FaPhoneAlt className="group-hover:scale-110 transition-transform" />
     Contact Us

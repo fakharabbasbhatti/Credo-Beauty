@@ -15,17 +15,10 @@ const Navbar = () => {
   const [mobileSearch, setMobileSearch] = useState(false);
 
   const navItems = [
-    "Bestsellers",
-    "New",
-    "Skin",
-    "Makeup",
-    "Hair",
-    "Body",
-    "Fragrance",
-    "Gifts",
-    "Sale",
-    "Brands",
-    "Mission",
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -41,12 +34,15 @@ const Navbar = () => {
 
         {/* Desktop Menu or Search Input */}
         {!showSearch ? (
-          <ul className="hidden lg:flex items-center space-x-6 text-[15px] font-semibold text-[#F1E3D3]">
+          <ul className="hidden lg:flex items-center space-x-10 text-[15px] font-semibold text-[#F1E3D3]">
             {navItems.map((item, i) => (
               <li key={i} className="relative cursor-pointer group">
-                <span className="transition-colors duration-200 group-hover:text-[#D4A373]">
-                  {item.toUpperCase()}
-                </span>
+                <Link
+                  to={item.path}
+                  className="transition-colors duration-200 group-hover:text-[#D4A373]"
+                >
+                  {item.name.toUpperCase()}
+                </Link>
                 <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-[#D4A373] transition-all duration-300 group-hover:w-full"></span>
               </li>
             ))}
@@ -64,44 +60,44 @@ const Navbar = () => {
 
         {/* Desktop Icons */}
         <div className="hidden lg:flex items-center space-x-5 text-[#F1E3D3]">
-  {showSearch ? (
-    <FiX
-      className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-      onClick={() => setShowSearch(false)}
-    />
-  ) : (
-    <FiSearch
-      className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-      onClick={() => setShowSearch(true)}
-    />
-  )}
+          {showSearch ? (
+            <FiX
+              className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+              onClick={() => setShowSearch(false)}
+            />
+          ) : (
+            <FiSearch
+              className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+              onClick={() => setShowSearch(true)}
+            />
+          )}
 
-  {/* Chat */}
-  <Link
-    to="/livechat"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiMessageCircle />
-  </Link>
+          {/* Chat */}
+          <Link
+            to="/livechat"
+            className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+          >
+            <FiMessageCircle />
+          </Link>
 
-  <div className="border-l h-5 border-[#D4A373]/40" />
+          <div className="border-l h-5 border-[#D4A373]/40" />
 
-  {/* Profile */}
-  <Link
-    to="/profile"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiUser />
-  </Link>
+          {/* Profile */}
+          <Link
+            to="/profile"
+            className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+          >
+            <FiUser />
+          </Link>
 
-  {/* Cart */}
-  <Link
-    to="/addtocart"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiShoppingBag />
-  </Link>
-</div>
+          {/* Cart */}
+          <Link
+            to="/addtocart"
+            className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+          >
+            <FiShoppingBag />
+          </Link>
+        </div>
 
         {/* Mobile Hamburger */}
         <button
@@ -140,48 +136,52 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-            {/* Menu Items */}
-            <ul className="flex flex-col p-4 space-y-4 text-sm font-medium text-[#F1E3D3]">
+            {/* Mobile Menu Items */}
+            <ul className="flex flex-col p-4 space-y-6 text-sm font-medium text-[#F1E3D3]">
               {navItems.map((item, i) => (
-                <li key={i} className="relative cursor-pointer group">
-                  <span className="transition-colors duration-200 group-hover:text-[#D4A373]">
-                    {item.toUpperCase()}
-                  </span>
+                <li key={i} className="relative cursor-pointer group text-center">
+                  <Link
+                    to={item.path}
+                    onClick={() => setIsOpen(false)} // close menu on click
+                    className="transition-colors duration-200 group-hover:text-[#D4A373] text-center"
+                  >
+                    {item.name.toUpperCase()}
+                  </Link>
                   <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#D4A373] transition-all duration-300 group-hover:w-full"></span>
                 </li>
               ))}
             </ul>
 
             {/* Mobile Icons */}
-            <div className="flex items-center justify-around py-3 border-t border-[#D4A373]/30 text-[#F1E3D3]">
-  <Link
-    to="/search"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiSearch />
-  </Link>
+            <div className="flex items-center justify-around py-5 border-t border-[#D4A373]/30 text-[#F1E3D3]">
+              <button
+                className="text-xl hover:text-[#C69062] transition-colors"
+                onClick={() => setMobileSearch(true)}
+              >
+                <FiSearch />
+              </button>
 
-  <Link
-    to="/livechat"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiMessageCircle />
-  </Link>
+              <Link
+                to="/livechat"
+                className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+              >
+                <FiMessageCircle />
+              </Link>
 
-  <Link
-    to="/profile"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiUser />
-  </Link>
+              <Link
+                to="/profile"
+                className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+              >
+                <FiUser />
+              </Link>
 
-  <Link
-    to="/addtocart"
-    className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
-  >
-    <FiShoppingBag />
-  </Link>
-</div>
+              <Link
+                to="/addtocart"
+                className="text-xl cursor-pointer hover:text-[#C69062] transition-colors"
+              >
+                <FiShoppingBag />
+              </Link>
+            </div>
           </>
         )}
       </div>

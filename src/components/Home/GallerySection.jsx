@@ -92,7 +92,7 @@ const GallerySection = () => {
           data-aos-delay="300"
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFF4E6] mb-4 md:mb-6 leading-tight"
         >
-          Shop by <span className="text-[#D4A373]">Gift Guide</span>
+          Shop By <span className="text-[#D4A373]">Gift Guide</span>
         </h2>
         <p
           data-aos="fade-down"

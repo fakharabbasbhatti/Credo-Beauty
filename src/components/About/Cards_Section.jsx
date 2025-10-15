@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaSprayCan,
   FaBrush,
@@ -40,27 +41,26 @@ function Cards_Section() {
       >
         <div>
           <h1 
-            className="font-bold text-4xl md:text-5xl mb-4 leading-tight"
+            className="font-bold text-4xl mb-4 leading-tight"
             style={{ color: "#FFF4E6" }}
           >
-            Discover Our Beauty Services
+Our Curated Beauty & Fashion Services
           </h1>
           <p 
             className="text-lg max-w-2xl"
             style={{ color: "#F1E3D3" }}
           >
-            Experience premium beauty treatments tailored to enhance your natural radiance
-          </p>
+Indulge in premium treatments and personalized style sessions tailored just for you.          </p>
         </div>
-        <a
-          href="#"
+        <Link
+          to="/services"
           className="group flex items-center gap-3 transition-all"
           style={{ color: "#D4A373" }}
           data-aos="fade-up"
         >
           <span className="font-medium">View All Services</span>
           <BsArrowRight className="group-hover:translate-x-1 transition-transform" />
-        </a>
+        </Link>
       </div>
 
       {/* Beauty Services Grid */}

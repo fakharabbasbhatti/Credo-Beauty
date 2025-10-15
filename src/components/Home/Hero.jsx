@@ -24,7 +24,7 @@ const Hero = () => {
           data-aos="zoom-in"
           data-aos-delay="200"
         />
-        <div 
+        <div
           className="absolute inset-0 bg-gradient-to-r from-[#1B1B1B]/90 via-[#1B1B1B]/70 to-[#1B1B1B]/90"
           data-aos="fade-in"
           data-aos-delay="400"
@@ -59,10 +59,10 @@ const Hero = () => {
             <h1
               data-aos="fade-down"
               data-aos-delay="300"
-              className="text-4xl sm:text-5xl  font-bold text-[#FFF4E6] tracking-tight mb-6 leading-tight"
+              className="text-3xl sm:text-5xl  font-bold text-[#aa9c89] tracking-tight mb-6 leading-tight"
             >
-              The clean beauty{" "}
-              <span className="text-[#D4A373]">gift shop</span> is open
+              The Natural {" "}
+              <span className="text-[#D4A373]"> Body Care </span> Shop Open
             </h1>
 
             {/* Subheadline */}
@@ -71,7 +71,7 @@ const Hero = () => {
               data-aos-delay="500"
               className="text-lg sm:text-xl  text-[#F1E3D3] mb-8 max-w-2xl mx-auto leading-relaxed"
             >
-              Explore magical gifts, must-have clean beauty, and something special for everyone on your list — including you.
+              Discover glow-up essentials, fashion favorites, and something stunning for all — including you.
             </p>
 
             {/* Features Grid */}
@@ -82,7 +82,7 @@ const Hero = () => {
             >
               <div className="flex items-center justify-center gap-2 text-[#F1E3D3]">
                 <FaGift className="text-[#D4A373]" />
-                <span className="text-sm">Curated Gifts</span>
+                <span className="text-sm">Curated Style</span>
               </div>
               <div className="flex items-center justify-center gap-2 text-[#F1E3D3]">
                 <FaShoppingBag className="text-[#D4A373]" />
@@ -90,35 +90,35 @@ const Hero = () => {
               </div>
               <div className="flex items-center justify-center gap-2 text-[#F1E3D3]">
                 <FaStar className="text-[#D4A373]" />
-                <span className="text-sm">Premium Quality</span>
+                <span className="text-sm">Timeless Fashion</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-           <div
-  className="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4 mb-8"
-  data-aos="zoom-in"
-  data-aos-delay="900"
->
-  <Link
-    to="/about"
-    className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
-  >
-    <FaShoppingBag className="group-hover:scale-110 transition-transform" />
-    Shop Now
-  </Link>
+            <div
+              className="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4 mb-8"
+              data-aos="zoom-in"
+              data-aos-delay="900"
+            >
+              <Link
+                to="/services"
+                className="p-4 px-5 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
+              >
+                <FaShoppingBag className="group-hover:scale-110 transition-transform" />
+                Shop Now
+              </Link>
 
-  <a
-    href="/contact"
-    className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
-  >
-    <FaPhoneAlt className="group-hover:scale-110 transition-transform" />
-    Contact Us
-  </a>
-</div>
+              <a
+                href="/contact"
+                className="p-4 px-5 border-1 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+              >
+                <FaPhoneAlt className="group-hover:scale-110 transition-transform" />
+                Contact Us
+              </a>
+            </div>
 
-        
-     {/* Contact Quick Info */}
+
+            {/* Contact Quick Info */}
             <div
               className="hidden md:flex flex-col sm:flex-row justify-center items-center gap-6 text-[#F1E3D3]/90 text-sm"
               data-aos="fade-in"
@@ -147,7 +147,7 @@ const Hero = () => {
         </div>
       </div>
 
-   {/* Scroll Down Indicator */}
+      {/* Scroll Down Indicator */}
       <div
         data-aos="fade-in"
         data-aos-delay="1500"
@@ -181,3 +181,8 @@ export default Hero;
 // Text & border accents: creamy whites (#FFF4E6, #F1E3D3) for luxury contrast
 
 // Hover effect: subtle warm tone shift to #C69062
+
+
+
+
+// ma na 2files bani ha jis ma a avbar ma addtocart ka icos use kia hova ha aur ak aur files ha jis ma na cards baya ha jis ma addtocart ka button ka ma chyta hu ka add to cartwala button par click kro to wo jo navber ma addtocart ka icons ho us ka

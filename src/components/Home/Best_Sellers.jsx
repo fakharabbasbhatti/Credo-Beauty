@@ -21,8 +21,8 @@ const products = [
   {
     id: 1,
     images: [
-      "https://images.unsplash.com/photo-1648712789552-a039336cecf9?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1686831758227-1802d0ba5eda?w=500&auto=format&fit=crop&q=60",
+      "/home/p1.avif",
+      "/home/p2.avif",
     ],
     title: "Radiance Serum",
     desc: "Brightening serum infused with vitamin C for glowing skin.",
@@ -36,8 +36,8 @@ const products = [
   {
     id: 2,
     images: [
-      "https://images.unsplash.com/photo-1739950839930-ef45c078f316?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1552373705-a5e3d420f148?w=500&auto=format&fit=crop&q=60",
+      "/home/p3.avif",
+      "/home/p4.avif",
     ],
     title: "Luxury Face Cream",
     desc: "Deep hydration cream that rejuvenates and smooths fine lines.",
@@ -51,8 +51,8 @@ const products = [
   {
     id: 3,
     images: [
-      "https://images.unsplash.com/photo-1587303876752-91efb6315dcc?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1606231541998-dfc5fe52a45a?w=500&auto=format&fit=crop&q=60",
+      "/home/p5.avif",
+      "/home/p6.avif",
     ],
     title: "Velvet Lipstick",
     desc: "Richly pigmented lipstick with a soft-matte finish.",
@@ -65,8 +65,8 @@ const products = [
   {
     id: 4,
     images: [
-      "https://images.unsplash.com/photo-1757313231524-6504c839ca0b?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1757313190877-78626f3f22b5?w=500&auto=format&fit=crop&q=60",
+      "/home/p7.avif",
+      "/home/p8.avif",
     ],
     title: "Luxury Perfume",
     desc: "Floral and amber notes in a timeless fragrance blend.",
@@ -80,8 +80,8 @@ const products = [
   {
     id: 5,
     images: [
-      "https://media.istockphoto.com/id/1490847857/photo/centella-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=ftOFE1S4QpwFnlA-anIrfpRI-ptLbBv6SKk5qwgQ-E8=",
-      "https://images.unsplash.com/photo-1585975766936-6eaae1596918?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEh5ZHJhJTIwQ2xlYW5zZXIlMjBwcm9kdWN0fGVufDB8fDB8fHww",
+      "/home/p9.webp",
+      "/home/p10.avif",
     ],
     title: "Hydra Cleanser",
     desc: "Gentle foaming cleanser with aloe and hyaluronic acid.",
@@ -94,8 +94,8 @@ const products = [
   {
     id: 6,
     images: [
-      "https://images.unsplash.com/photo-1749372509807-e5715d681af8?w=500&auto=format&fit=crop&q=60",
-      "https://images.unsplash.com/photo-1664111629972-685387366637?w=500&auto=format&fit=crop&q=60",
+      "/home/p11.avif",
+      "/home/p12.avif",
     ],
     title: "Glow Foundation",
     desc: "Lightweight foundation that evens tone with radiant coverage.",
@@ -109,8 +109,8 @@ const products = [
   {
     id: 7,
     images: [
-      "https://media.istockphoto.com/id/1309675479/photo/aroma-beauty-cream-container-with-essential-oil-flower-of-rose-on-round-podium-cosmetic.webp?a=1&b=1&s=612x612&w=0&k=20&c=oRs9kWk7vpOt8mkfEMHMc0-tAMg46DiQR5tj7DkW_9k=",
-      "https://media.istockphoto.com/id/1324040651/photo/aroma-beauty-cream-container-with-essential-oil-flower-of-rose-on-round-podium-cosmetic.webp?a=1&b=1&s=612x612&w=0&k=20&c=w2vzX663xPXbgEMaO2GuGuqjuQQpNBYR2EZTJVBZ1x8=",
+      "/home/p13.webp",
+      "/home/p14.webp",
     ],
     title: "Rose Mist Toner",
     desc: "Refreshing facial mist enriched with rosewater and antioxidants.",
@@ -123,8 +123,8 @@ const products = [
   {
     id: 8,
     images: [
-      "https://media.istockphoto.com/id/2227365496/photo/under-eye-patches-in-glossy-black-container-hydrogel-eye-mask-in-cylindrical-container-luxury.webp?a=1&b=1&s=612x612&w=0&k=20&c=2bLMyldGlqt1-BPIwp6FL-JecFcx9W9JbEedF_HRbjw=",
-      "https://images.unsplash.com/photo-1706067501231-aab1ab1c1dbd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEdvbGRlbiUyMEV5ZSUyMENyZWFtJTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "/home/p15.webp",
+      "/home/p16.avif",
     ],
     title: "Golden Eye Cream",
     desc: "Luxe under-eye cream that firms and brightens dark circles.",
