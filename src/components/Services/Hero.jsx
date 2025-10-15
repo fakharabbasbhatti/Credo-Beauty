@@ -19,7 +19,7 @@ export default function AboutHero() {
       <div 
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('/home/sh.avif')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -89,7 +89,7 @@ export default function AboutHero() {
 
           <a
             href="/mission"
-            className="px-8 md:px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+            className="px-8 md:px-8 py-4 border-1 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
           >
             <FiTarget className="group-hover:scale-110 transition-transform" />
             Our Mission

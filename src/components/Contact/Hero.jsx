@@ -18,7 +18,7 @@ export default function HeroContact() {
       <div
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: `url('https://media.istockphoto.com/id/2188812660/photo/floating-beauty-products-metallic-purple-hand-serum-bottle-cream-jar-red-lipstick-on-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=yy5cQbU1k_ISbIpXaYvc0bwT13KIHwH9GjM8UJgFDBM=')`,
+          backgroundImage: `url('/home/ch.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -90,7 +90,7 @@ export default function HeroContact() {
 
           <a
             href="mailto:hello@examplemail.com"
-            className="px-8 py-4 border-2 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
+            className="px-8 py-4 border-1 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
           >
             <FaEnvelope className="group-hover:scale-110 transition-transform" />
             Email Us
