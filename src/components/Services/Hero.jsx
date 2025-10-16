@@ -80,7 +80,7 @@ export default function AboutHero() {
         {/* CTA Buttons */}
         <div data-aos="fade-up" data-aos-delay="500" className="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4 mb-8">
           <a
-            href="/our-story"
+            href="/specialoffer"
             className="px-8 py-4 bg-[#D4A373] hover:bg-[#C69062] text-[#1B1B1B] font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 group"
           >
             <FiUsers className="group-hover:scale-110 transition-transform" />
@@ -88,7 +88,7 @@ export default function AboutHero() {
           </a>
 
           <a
-            href="/mission"
+            href="/rewards"
             className="px-8 md:px-8 py-4 border-1 border-[#FFF4E6] text-[#FFF4E6] hover:bg-[#FFF4E6] hover:text-[#1B1B1B] font-semibold rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 group"
           >
             <FiTarget className="group-hover:scale-110 transition-transform" />
