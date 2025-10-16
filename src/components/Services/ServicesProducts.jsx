@@ -84,7 +84,7 @@ const ServicesProducts = () => {
   });
 
   return (
-    <div className="min-h-screen bg-[#1B1B1B] text-[#FFF4E6] flex flex-col md:flex-row overflow-hidden">
+    <div className="min-h-screen bg-[#220303] text-[#FFF4E6] flex flex-col md:flex-row overflow-hidden">
       {/* Sidebar */}
       <aside
         data-aos="fade-right"

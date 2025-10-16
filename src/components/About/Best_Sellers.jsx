@@ -97,7 +97,7 @@ const products = [
       "/home/p11.avif",
       "/home/p12.avif",
     ],
-    title: "Glow Foundation",
+    title: "Elegant Sunglasses",
     desc: "Lightweight foundation that evens tone with radiant coverage.",
     price: "$55",
     originalPrice: "$70",

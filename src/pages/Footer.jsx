@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -19,44 +20,58 @@ const Footer = () => {
     });
   }, []);
 
-  const footerLinks = [
-    {
-      title: "Quick Help",
-      links: [
-        "Chat Live",
-        "Contact Credo",
-        "FAQs",
-        "Returns and Exchanges",
-        "Orders and Shipping",
-      ],
-    },
-    {
-      title: "Account",
-      links: ["My Account", "Wishlist", "Rewards"],
-    },
-    {
-      title: "Stores & Services",
-      links: ["Store Locator", "Beauty Services", "Events & Workshops"],
-    },
-    {
-      title: "Discounts",
-      links: ["Special Offers", "Refer a Friend", "Gift Cards"],
-    },
-    {
-      title: "About Us",
-      links: [
-        "The Credo Clean Standard",
-        "Our Brands",
-        "Credo for Change",
-        "Sustainability Pact",
-        "Careers",
-      ],
-    },
-    {
-      title: "Charitable Partnerships",
-      links: ["Lipstick Angels", "Environmental Initiatives"],
-    },
-  ];
+ const footerLinks = [
+  {
+    title: "Quick Help",
+    links: [
+      { name: "Chat Live", path: "/livechat" },
+      { name: "Contact Credo", path: "/contact" },
+      { name: "FAQs", path: "/about" },
+      { name: "Returns and Exchanges", path: "/returns" },
+      { name: "Orders and Shipping", path: "/orders" },
+    ],
+  },
+  {
+    title: "Account",
+    links: [
+      { name: "My Account", path: "/profile" },
+      { name: "Wishlist", path: "/wishlist" },
+      { name: "Rewards", path: "/rewards" },
+    ],
+  },
+  {
+    title: "Stores & Services",
+    links: [
+      { name: "Store Locator", path: "/stores" },
+      { name: "Beauty Services", path: "/services" },
+      { name: "Events & Workshops", path: "/events" },
+    ],
+  },
+  {
+    title: "Discounts",
+    links: [
+      { name: "Special Offers", path: "/specialoffer" },
+      { name: "Refer a Friend", path: "/referfriend" },
+    ],
+  },
+  {
+    title: "About Us",
+    links: [
+      { name: "The Credo Clean Standard", path: "/cleanstandard" },
+      { name: "Our Brands", path: "/brands" },
+      { name: "Credo for Change", path: "/change" },
+      { name: "Sustainability Pact", path: "/sustainability" },
+      { name: "Careers", path: "/careers" },
+    ],
+  },
+  {
+    title: "Charitable Partnerships",
+    links: [
+      { name: "Lipstick Angels", path: "/lipstick-angels" },
+      { name: "Environmental Initiatives", path: "/environment" },
+    ],
+  },
+];
 
   const socialIcons = [
     { icon: FaFacebookF, url: "#" },
@@ -185,39 +200,42 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SIDE: LINKS GRID */}
-          <div className="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
-            {footerLinks.map((section, index) => (
-              <div 
-                key={section.title} 
-                className="group"
-                data-aos="fade-up"
-                data-aos-delay={300 + (index * 100)}
-              >
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FFF4E6] mb-4 flex items-center gap-2">
-                  <div 
-                    className="w-2 h-2 bg-[#D4A373] rounded-full group-hover:scale-125 transition-transform"
-                    data-aos="zoom-in"
-                    data-aos-delay={400 + (index * 100)}
-                  ></div>
-                  {section.title}
-                </h3>
-                <ul className="space-y-3">
-                  {section.links.map((link, linkIndex) => (
-                    <li key={link}>
-                      <a
-                        href="#"
-                        className="text-sm text-[#F1E3D3]/80 hover:text-[#D4A373] transition-all duration-200 hover:translate-x-1 flex items-center gap-1"
-                        data-aos="fade-right"
-                        data-aos-delay={500 + (index * 100) + (linkIndex * 50)}
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        <div className="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
+      {footerLinks.map((section, index) => (
+        <div
+          key={section.title}
+          className="group"
+          data-aos="fade-up"
+          data-aos-delay={300 + index * 100}
+        >
+          {/* Section Title */}
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-[#FFF4E6] mb-4 flex items-center gap-2">
+            <div
+              className="w-2 h-2 bg-[#D4A373] rounded-full group-hover:scale-125 transition-transform"
+              data-aos="zoom-in"
+              data-aos-delay={400 + index * 100}
+            ></div>
+            {section.title}
+          </h3>
+
+          {/* Section Links */}
+          <ul className="space-y-3">
+            {section.links.map((link, linkIndex) => (
+              <li key={link.name}>
+                <Link
+                  to={link.path}
+                  className="text-sm text-[#F1E3D3]/80 hover:text-[#D4A373] transition-all duration-200 hover:translate-x-1 flex items-center gap-1"
+                  data-aos="fade-right"
+                  data-aos-delay={500 + index * 100 + linkIndex * 50}
+                >
+                  {link.name}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+      ))}
+    </div>
         </div>
 
         {/* BOTTOM SECTION */}
